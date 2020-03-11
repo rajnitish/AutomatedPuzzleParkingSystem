@@ -44,8 +44,8 @@ int sc_main(int argc, char* argv[]) {
 	es_x = 1;
 	pf_y = 3;
 	pf_x = 0;
-	puzzle[es_y][es_x] = " E";
-	puzzle[pf_y][pf_x] = "  ";
+	puzzle[es_y][es_x] = "  ";
+	puzzle[pf_y][pf_x] = "PF";
 	displayParkingLayout(puzzle);
 
 
@@ -98,7 +98,7 @@ int sc_main(int argc, char* argv[]) {
 						pf_y = i;
 						pf_x = j;
 					}
-					if(!puzzle[i][j].compare(" E"))
+					if(!puzzle[i][j].compare("  "))
 					{
 						es_y = i;
 						es_x = j;
@@ -447,7 +447,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{   for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare(" E"))
+						if(!puzzle[i][j].compare("  "))
 						{
 							es_y = i;
 							es_x = j;
@@ -484,7 +484,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -517,7 +517,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -551,7 +551,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -583,7 +583,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -615,7 +615,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -648,7 +648,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -681,7 +681,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -714,7 +714,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -746,7 +746,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -778,7 +778,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -810,7 +810,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -841,7 +841,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -873,7 +873,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -905,7 +905,7 @@ int sc_main(int argc, char* argv[]) {
 					for(int i = 0; i < ROW;i++)
 					{for(int j = 0; j < COL;j++)
 					{
-						if(!puzzle[i][j].compare("  ") )
+						if(!puzzle[i][j].compare("PF") )
 						{pnull_y = i;
 						pnull_x = j;
 						}
@@ -933,7 +933,7 @@ int sc_main(int argc, char* argv[]) {
 
 				else if (!option.compare("R"))
 				{
-					puzzle[ptemp_y][ptemp_x] = "  ";
+					puzzle[ptemp_y][ptemp_x] = "PF";
 					pf_y = ptemp_y;
 					pf_x = ptemp_x;
 					displayParkingLayout(puzzle);
@@ -982,7 +982,7 @@ void performLEFT()
 	ptemp_x = es_x;
 	es_x = es_x - 1;
 	puzzle[ptemp_y][ptemp_x] = puzzle[es_y][es_x];
-	puzzle[es_y][es_x] = " E";
+	puzzle[es_y][es_x] = "  ";
 }
 
 
@@ -994,7 +994,7 @@ void performRIGHT()
 	ptemp_x = es_x;
 	es_x = es_x + 1;
 	puzzle[ptemp_y][ptemp_x] = puzzle[es_y][es_x];
-	puzzle[es_y][es_x] = " E";
+	puzzle[es_y][es_x] = "  ";
 }
 
 
@@ -1006,7 +1006,7 @@ void performUP()
 	ptemp_x = es_x;
 	es_y = es_y - 1;
 	puzzle[ptemp_y][ptemp_x] = puzzle[es_y][es_x];
-	puzzle[es_y][es_x] = " E";
+	puzzle[es_y][es_x] = "  ";
 }
 
 
@@ -1018,7 +1018,7 @@ void performDOWN()
 	ptemp_x = es_x;
 	es_y = es_y + 1;
 	puzzle[ptemp_y][ptemp_x] = puzzle[es_y][es_x];
-	puzzle[es_y][es_x] = " E";
+	puzzle[es_y][es_x] = "  ";
 }
 
 
